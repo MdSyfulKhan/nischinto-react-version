@@ -1,5 +1,5 @@
 import React from 'react';
-import Hero from '../Components/Hero/Hero';
+import Hero3 from '../Components/Hero/Hero3';
 import LocationInMap from '../Components/Map/LocationInMap';
 import Contact from '../Components/Contact/Contact';
 import Department from '../Components/Department/Department';
@@ -17,31 +17,26 @@ import Funfact from '../Components/Funfact/Funfact';
 import BeforeAfter from '../Components/BeforeAfter/BeforeAfter';
 import MasonryGallery from '../Components/Gallery/Gallery';
 
-const heroData = {
-  bgImg: 'images/hero-bg.jpg',
-  bgShape: 'shape/hero-shape.png',
-  sliderImages: [
-    {
-      img: 'images/hero-img.png',
-    },
-    {
-      img: 'images/hero-img1.png',
-    },
-    {
-      img: 'images/hero-img2.png',
-    },
-    {
-      img: 'images/hero-img.png',
-    },
-    {
-      img: 'images/hero-img1.png',
-    },
-    {
-      img: 'images/hero-img2.png',
-    },
-  ],
-  title: ['Crutches', 'Laboratory', 'Cardiology', 'Dentist', 'Neurology'],
-};
+
+
+
+const heroData = [
+  {
+    title: "Safe your own health. <br /> Get best Service.",
+    subTitle: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br /> Tempor incididunt ut labore et dolore magna.",
+    bgImg: 'images/hero-bg7.jpg',
+  },
+  {
+    title: "Safe your own health. <br /> Get best Service.",
+    subTitle: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br /> Tempor incididunt ut labore et dolore magna.",
+    bgImg: 'images/hero-bg8.jpg',
+  },
+  {
+    title: "Safe your own health. <br /> Get best Service.",
+    subTitle: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br /> Tempor incididunt ut labore et dolore magna.",
+    bgImg: 'images/hero-bg.jpg',
+  }
+];
 
 const iconboxData = [
   {
@@ -493,10 +488,10 @@ const brandData = [
 const mapLocationURL =
   'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d193175.30893635444!2d-74.373409!3d40.841927!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3a82f1352d0dd%3A0x81d4f72c4435aab5!2sTroy%20Meadows%20Wetlands!5e0!3m2!1sen!2sbd!4v1701067943819!5m2!1sen!2sbd';
 
-const Home = () => {
+const Home2 = () => {
   return (
     <>
-      <Hero data={heroData} />
+      <Hero3 data={heroData} />
       <Iconbox data={iconboxData} />
       <About data={aboutData} />
       <Department />
@@ -518,4 +513,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Home2;

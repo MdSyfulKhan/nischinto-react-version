@@ -5,6 +5,7 @@ import Home from './Pages/Home';
 import PostDetails from './Components/Post/PostDetails';
 import PageNotFound from './Components/404/PageNotFound';
 import Home2 from './Pages/Home2';
+import Home3 from './Pages/Home3';
 
 const App = () => {
   const { pathname } = useLocation();
@@ -16,7 +17,8 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Layout />}>
         {/* <Route index element={<Home />} /> */}
-        <Route index element={<Home2 />} />
+        {/* <Route index element={<Home2 />} /> */}
+        <Route index element={<Home3 />} />
         <Route path="/post/:postId" element={<PostDetails />} />
         <Route path="*" element={<PageNotFound />} />
       </Route>
