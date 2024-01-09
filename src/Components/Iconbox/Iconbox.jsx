@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Iconbox = ({ data }) => {
+const Iconbox = ({ data, varient }) => {
   return (
     <section>
       <div className="st-height-b120 st-height-lg-b80" />
@@ -9,7 +9,7 @@ const Iconbox = ({ data }) => {
           {
             data.map((element, index) => (
               <div className="col-lg-4" key={index}>
-                <div className="st-iconbox st-style1">
+                <div className={`st-iconbox st-style1 ${varient}`}>
                   <div className={`st-iconbox-icon st-${element.bg}-box`}>
                     <img src={element.icon} alt={element.icon} />
                   </div>
@@ -27,4 +27,4 @@ const Iconbox = ({ data }) => {
   )
 }
 
-export default Iconbox
+export default Iconbox;

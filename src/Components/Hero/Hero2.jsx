@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import { TypeAnimation } from 'react-type-animation';
+import Spacing from '../Spacing/Spacing';
 
 const Hero2 = ({ data }) => {
 
@@ -9,7 +10,7 @@ const Hero2 = ({ data }) => {
 
   return (
     <>
-      <div className="st-height-b125 st-height-lg-b125" />
+      <Spacing lg={125} md={125} />
       <div id="home" className="st-hero-wrap st-color1 st-gray-bg overflow-hidden st-shape-wrap">
         <div className="st-shape1">
           <img src="/shape/contact-shape1.svg" alt="shape1" />

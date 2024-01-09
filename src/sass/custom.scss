@@ -1,4 +1,4 @@
-@import './default/variable';
+@import "./default/variable";
 a {
   text-decoration: none;
   &:hover {
@@ -6,7 +6,7 @@ a {
   }
 }
 
-.st-hero.st-style1{
+.st-hero.st-style1 {
   display: flex !important;
 }
 
@@ -16,7 +16,7 @@ a {
   // color: $blue;
   position: relative;
   > div:before {
-    content: '';
+    content: "";
     position: absolute;
     height: 75px;
     width: 100%;
@@ -26,6 +26,12 @@ a {
   }
 }
 
+.cd-headline-style1 {
+  .cd-words-wrapper > span {
+    background: initial;
+    color: $blue;
+  }
+}
 
 .cd-words-wrapper > span {
   background-image: url(../../public/shape/hero-shape.svg);
@@ -92,7 +98,7 @@ a {
     cursor: pointer;
     transition: all 0.4s ease;
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       height: 100%;
       width: 30px;
@@ -113,7 +119,7 @@ a {
       color: $black1;
     }
   }
-  &:hover .slick-arrow{
+  &:hover .slick-arrow {
     opacity: 1;
     visibility: visible;
   }
@@ -192,7 +198,7 @@ a {
     cursor: pointer;
     transition: all 0.4s ease;
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       height: 100%;
       width: 30px;
@@ -260,10 +266,14 @@ a {
   }
 }
 
-.st-iconbox.st-style1 .st-iconbox-icon img {
-  width: 52px;
+.st-iconbox.st-style1 {
+  .st-iconbox-icon img {
+    width: 52px;
+  }
+  &.st-type2 .st-iconbox-icon img {
+    width: 38px;
+  }
 }
-
 .my-masonry-grid {
   display: flex;
 }
@@ -342,7 +352,10 @@ a {
   h3 {
     font-size: 120px;
     color: $blue;
-    text-shadow: 1px 1px 0 $blue, 1px -1px 0 $blue, -1px 1px 0 $blue,
+    text-shadow:
+      1px 1px 0 $blue,
+      1px -1px 0 $blue,
+      -1px 1px 0 $blue,
       -1px -1px 0 $blue;
   }
 

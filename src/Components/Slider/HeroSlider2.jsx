@@ -1,7 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
 
-const HeroSlider = ({ data }) => {
+const HeroSlider2 = ({ data }) => {
   const settings = {
     dots: false,
     infinite: true,
@@ -14,10 +14,11 @@ const HeroSlider = ({ data }) => {
     arrows: false
   }
   return (
-    <Slider {...settings} className='st-slider-style1 st-hero-slider1'>
+    <Slider {...settings} className='st-slider-style1 st-hero-slider2'>
       {
         data.map((element, index) => (
           <div className="st-hero-img" key={index}>
+            {console.log(element)}
             <img src={element.img} alt={element.img} />
           </div>
         ))
@@ -26,4 +27,4 @@ const HeroSlider = ({ data }) => {
   )
 }
 
-export default HeroSlider;
+export default HeroSlider2;
